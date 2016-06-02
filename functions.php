@@ -3,6 +3,12 @@
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
+function personal_excerpt_length($length) {
+	return 16;
+}
+
+add_filter('excerpt_length', 'personal_excerpt_length', 999);
+
 function register_theme_menus() {
 	register_nav_menus(
 		array(
