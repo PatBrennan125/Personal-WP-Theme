@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 
-    <title><?php wp_title(); ?></title>
+    <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
 
@@ -29,24 +29,5 @@
 
     ?>
 
-
-    <!-- <ul class="no-bullet">
-      <li class="current parent"><a class='current' href="index.html">Portfolio</a>
-        <ul class="sub-menu">
-          <li><a href="item.html">Portfolio Item</a></li>
-          <li><a href="item.html">Portfolio Item</a></li>
-          <li><a href="item.html">Portfolio Item</a></li>
-          <li><a href="item.html">Portfolio Item</a></li>
-        </ul>
-      </li>
-      <li class="parent"><a href="blog.html">Blog</a>
-        <ul class="sub-menu">
-          <li><a href="single-post.html">Single Post</a></li>
-          <li><a href="author.html">Author Page</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul> -->
   </nav>
 </header>

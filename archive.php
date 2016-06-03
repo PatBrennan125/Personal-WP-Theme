@@ -7,9 +7,13 @@
       <div class="small-12 medium-7 medium-offset-1 medium-push-4 columns">
         <div class="primary">
 
+        <div class="leader">
+          <h1><?php wp_title(''); ?> Blog Posts</h1>
+        </div>
+
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	           <article <?php post_class('post'); ?>>
+	           <article class="post">
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <h2><?php echo strip_tags(get_the_excerpt()); ?></h2>
                 <ul class="post-meta no-bullet">
@@ -35,9 +39,8 @@
 
 		  <?php endif; ?>        
     	</div>
-      </div>
-        
-      <?php get_sidebar(); ?>
+    </div>
+
 
     </div>
 </section>
